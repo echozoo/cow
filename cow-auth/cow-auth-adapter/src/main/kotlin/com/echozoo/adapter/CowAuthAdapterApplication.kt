@@ -1,11 +1,11 @@
-package com.echozoo.infrastructure
+package com.echozoo.adapter
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CowAuthInfrastructureApplication
+class CowAuthAdapterApplication
 
 fun main(args: Array<String>) {
-    runApplication<CowAuthInfrastructureApplication>(*args)
+	runApplication<CowAuthAdapterApplication>(*args)
 }
