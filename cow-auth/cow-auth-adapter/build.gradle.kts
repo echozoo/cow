@@ -20,8 +20,11 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	api(project(":cow-auth:cow-auth-app"))
+	implementation ("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+	implementation ("org.springdoc:springdoc-openapi-starter-common:2.3.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
@@ -35,3 +38,5 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.register("prepareKotlinBuildScriptModel"){}
